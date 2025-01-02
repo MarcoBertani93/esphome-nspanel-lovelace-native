@@ -276,9 +276,7 @@ def valid_entity_id(entity_type_allowlist: list[str] = None):
             raise cv.Invalid(
                 f'When using the special "delete" entity type, you cannot also specify a value'
             )
-        raise cv.Invalid(
-            f'entity_id "{value}" must match the format "[entity type].[entity name]" and '+
-            'contain only numbers (0-9), letters (A-Z) and underscores (_), e.g. "light.living_room_light_1".'
+        return value
         )
     return validator
 
