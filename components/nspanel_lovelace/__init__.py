@@ -277,7 +277,6 @@ def valid_entity_id(entity_type_allowlist: list[str] = None):
                 f'When using the special "delete" entity type, you cannot also specify a value'
             )
         return value
-        )
     return validator
 
 def valid_clock_format(property_name):
