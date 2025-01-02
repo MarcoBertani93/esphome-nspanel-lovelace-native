@@ -463,7 +463,7 @@ CONFIG_SCHEMA = cv.All(
                         )
                 }),
                 CARD_THERMO: SCHEMA_CARD_BASE.extend({
-                    cv.Required(CONF_CARD_THERMO_ENTITY_ID): valid_entity_id(['climate'])
+                    cv.Required(CONF_CARD_THERMO_ENTITY_ID): valid_entity_id(None)
                 }),
                 CARD_MEDIA: SCHEMA_CARD_BASE.extend({
                     cv.Optional(CONF_CARD_ENTITIES): cv.ensure_list(SCHEMA_CARD_ENTITY),
